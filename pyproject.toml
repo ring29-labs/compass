@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "compass-shell"
+version = "0.2.0"
+description = "Find CLI commands with Jev, shell history, and local help"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/ring29-labs/compass"
+Issues = "https://github.com/ring29-labs/compass/issues"
+
+[project.scripts]
+compass = "compass.cli:main"
+
+[tool.setuptools]
+packages = ["compass"]
